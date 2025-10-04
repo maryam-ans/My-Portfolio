@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar</title>
+    <style>
+        html{
+            background-color: black;
+        }
+        .container{
+            height:500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .earth{
+            height: 100px;
+            width:100px;
+            background-color: rgb(47, 47, 173);
+            border: 2px solid rgb(6, 122, 122);
+            border-radius: 50%;
+            filter: drop-shadow(0 0 10px cyan);
+        }
+        .moon{
+            height: 20px;
+            width: 20px;
+            background-color: rgb(209, 179, 179);
+            margin: 50px;
+            border: 2px;
+            border-radius: 50%;
+            filter: drop-shadow(0 0 10px rgb(223, 193, 19));
+            position: absolute;
+            top:0px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .orbit{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            animation: moon 5s linear infinite;
+            padding: 100px;
+
+        }
+        @keyframes moon{
+            0%{
+                transform: rotate(0deg);
+
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="earth"></div>
+        <div class="orbit">
+        <div class="moon"></div></div>
+    </div>
+</body>
+</html>
