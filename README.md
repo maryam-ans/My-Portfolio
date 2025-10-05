@@ -1,0 +1,1 @@
+This is my first web development portfolio, built with HTML and CSS. It showcases my projects and growth as I learn new skills. Creating it was a rewarding challenge that helped me improve and gain confidence. I’m excited to keep updating it as I continue my web development journey!
